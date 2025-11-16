@@ -31,6 +31,30 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+html[dir="rtl"] body {
+  direction: rtl;
+  text-align: right;
+  font-family: 'Cairo', 'Inter', sans-serif;
+}
+
+html[dir="rtl"] .nav-bar,
+html[dir="rtl"] nav ul,
+html[dir="rtl"] .nav-actions {
+  flex-direction: row-reverse;
+}
+
+html[dir="rtl"] nav ul {
+  justify-content: flex-end;
+}
+
+html[dir="rtl"] .hero-content,
+html[dir="rtl"] .section-heading,
+html[dir="rtl"] .glass-card,
+html[dir="rtl"] .segment-card,
+html[dir="rtl"] .stat-card {
+  text-align: right;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -145,6 +169,28 @@ nav button {
   transition: color var(--transition-base);
 }
 
+.has-mega > button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 0;
+}
+
+.has-mega > button::after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid var(--color-muted);
+  transition: transform var(--transition-base), border-color var(--transition-base);
+}
+
+.has-mega.open > button::after {
+  transform: rotate(180deg);
+  border-top-color: var(--color-primary);
+}
+
 nav a:hover,
 nav button:hover {
   color: var(--color-primary);
@@ -154,6 +200,19 @@ nav button:hover {
   display: flex;
   align-items: center;
   gap: 12px;
+}
+
+.lang-toggle {
+  padding: 10px 18px;
+  border-radius: 999px;
+  border: 1px solid var(--border-glow);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.lang-toggle:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
 }
 
 .mega-menu {
@@ -171,7 +230,7 @@ nav button:hover {
   gap: 24px;
 }
 
-nav li:hover > .mega-menu {
+.has-mega.open > .mega-menu {
   display: grid;
 }
 
@@ -596,14 +655,14 @@ footer ul {
     place-items: center;
   }
 
-  nav li:hover > .mega-menu {
-    display: none;
-  }
-
   .mega-menu {
     position: static;
     transform: none;
     width: 100%;
+  }
+
+  .has-mega.open > .mega-menu {
+    display: block;
   }
 }
 

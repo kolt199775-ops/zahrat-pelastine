@@ -2,6 +2,15 @@ document.addEventListener('DOMContentLoaded', () => {
   const menuToggle = document.getElementById('menuToggle');
   const mobileNav = document.getElementById('mobileNav');
   const mobileLinks = document.querySelectorAll('#mobileNav a');
+  const megaButtons = document.querySelectorAll('.has-mega > button');
+
+  const closeMegaMenus = () => {
+    megaButtons.forEach(button => {
+      const parent = button.parentElement;
+      parent.classList.remove('open');
+      button.setAttribute('aria-expanded', 'false');
+    });
+  };
 
   if (menuToggle && mobileNav) {
     menuToggle.addEventListener('click', () => {
@@ -95,6 +104,32 @@ document.addEventListener('DOMContentLoaded', () => {
       contactForm.reset();
     });
   }
+
+  megaButtons.forEach(button => {
+    button.addEventListener('click', event => {
+      event.stopPropagation();
+      const parent = button.parentElement;
+      const isOpen = parent.classList.contains('open');
+      closeMegaMenus();
+
+      if (!isOpen) {
+        parent.classList.add('open');
+        button.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+
+  document.addEventListener('click', event => {
+    if (!event.target.closest('.has-mega')) {
+      closeMegaMenus();
+    }
+  });
+
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape') {
+      closeMegaMenus();
+    }
+  });
 
   // Agent form
   const agentForm = document.getElementById('agentForm');

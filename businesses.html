@@ -9,7 +9,7 @@
   <meta property="og:description" content="Property, liability, marine, fleet, cyber and employee benefits." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
   <script defer src="script.js"></script>
 </head>
@@ -17,32 +17,65 @@
   <header class="site-header">
     <div class="container nav-bar">
       <a href="index.html" class="logo"><span></span>AREDO</a>
-      <nav>
+      <nav aria-label="Primary">
         <ul>
-          <li>
-            <button>Individuals & Families</button>
+          <li class="has-mega">
+            <button type="button" aria-expanded="false">Individuals & Families</button>
             <div class="mega-menu">
-              <div class="mega-card"><h4>Motor Insurance</h4><p>Comprehensive protection for vehicles, roadside and cross-border cover.</p></div>
-              <div class="mega-card"><h4>Health & Medical</h4><p>Private medical access with regional provider networks.</p></div>
-              <div class="mega-card"><h4>Home & Property</h4><p>Building, contents and valuables cover built for Iraq homes.</p></div>
-              <div class="mega-card"><h4>Life & Savings</h4><p>Secure futures with education and savings plans.</p></div>
+              <div class="mega-card">
+                <h4>Motor Insurance</h4>
+                <p>Comprehensive protection for vehicles, roadside and cross-border cover.</p>
+              </div>
+              <div class="mega-card">
+                <h4>Health & Medical</h4>
+                <p>Private medical access with regional provider networks.</p>
+              </div>
+              <div class="mega-card">
+                <h4>Home & Property</h4>
+                <p>Building, contents and valuables cover built for Iraq homes.</p>
+              </div>
+              <div class="mega-card">
+                <h4>Life & Savings</h4>
+                <p>Secure futures with education and savings plans.</p>
+              </div>
             </div>
           </li>
-          <li>
-            <button>Businesses</button>
+          <li class="has-mega">
+            <button type="button" aria-expanded="false">Businesses</button>
             <div class="mega-menu">
-              <div class="mega-card"><h4>SME Packages</h4><p>Bundle of property, liability and employee cover.</p></div>
-              <div class="mega-card"><h4>Corporate Risk</h4><p>Structured programs for oil, gas, construction and logistics.</p></div>
-              <div class="mega-card"><h4>Employee Benefits</h4><p>Group health, life, accident and travel for your teams.</p></div>
-              <div class="mega-card"><h4>Cyber & Liability</h4><p>Protect your data, directors and brand reputation.</p></div>
+              <div class="mega-card">
+                <h4>SME Packages</h4>
+                <p>Bundle of property, liability and employee cover.</p>
+              </div>
+              <div class="mega-card">
+                <h4>Corporate Risk</h4>
+                <p>Structured programs for oil, gas, construction and logistics.</p>
+              </div>
+              <div class="mega-card">
+                <h4>Employee Benefits</h4>
+                <p>Group health, life, accident and travel for your teams.</p>
+              </div>
+              <div class="mega-card">
+                <h4>Cyber & Liability</h4>
+                <p>Protect your data, directors and brand reputation.</p>
+              </div>
             </div>
           </li>
-          <li>
-            <button>Agents & Partners</button>
+          <li class="has-mega">
+            <button type="button" aria-expanded="false">Agents & Partners</button>
             <div class="mega-menu">
-              <div class="mega-card"><h4>Partner Programs</h4><p>Tiered commissions, digital tools and marketing support.</p></div>
-              <div class="mega-card"><h4>Training Academy</h4><p>Certification pathways for new and experienced agents.</p></div>
-              <div class="mega-card"><h4>Portal Access</h4><p>Quote, bind and service clients in one secure platform.</p></div>
+              <div class="mega-card">
+                <h4>Partner Programs</h4>
+                <p>Tiered commissions, digital tools and marketing support.</p>
+              </div>
+              <div class="mega-card">
+                <h4>Training Academy</h4>
+                <p>Certification pathways for new and experienced agents.</p>
+              </div>
+              <div class="mega-card">
+                <h4>Portal Access</h4>
+                <p>Quote, bind and service clients in one secure platform.</p>
+              </div>
             </div>
           </li>
           <li><a href="claims.html">Claims</a></li>
@@ -52,23 +85,31 @@
         </ul>
       </nav>
       <div class="nav-actions">
+        <a href="index-ar.html" class="lang-toggle" lang="ar" hreflang="ar">عربي</a>
         <a href="contact.html" class="btn btn-primary">Get a Quote</a>
-        <button class="menu-toggle" id="menuToggle"><span></span></button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation"><span></span></button>
       </div>
     </div>
   </header>
 
-  <div class="mobile-nav" id="mobileNav">
+  <div class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
     <button class="has-sub">Individuals & Families</button>
-    <div class="listing-card"><a href="individuals.html">Personal solutions overview</a></div>
+    <div class="listing-card">
+      <a href="individuals.html">Personal solutions overview</a>
+    </div>
     <button class="has-sub">Businesses</button>
-    <div class="listing-card"><a href="businesses.html">Corporate coverage</a></div>
+    <div class="listing-card">
+      <a href="businesses.html">Corporate coverage</a>
+    </div>
     <button class="has-sub">Agents & Partners</button>
-    <div class="listing-card"><a href="agents.html">Partner with us</a></div>
+    <div class="listing-card">
+      <a href="agents.html">Partner with us</a>
+    </div>
     <a href="claims.html">Claims</a>
     <a href="insights.html">Insights</a>
     <a href="about.html">About</a>
     <a href="contact.html">Contact</a>
+    <a href="index-ar.html" class="lang-toggle" lang="ar" hreflang="ar">عربي</a>
     <a href="contact.html" class="btn btn-primary">Get a Quote</a>
   </div>
 

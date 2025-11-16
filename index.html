@@ -9,7 +9,7 @@
   <meta property="og:description" content="Comprehensive insurance for individuals, SMEs and corporates across Iraq." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
   <script defer src="script.js"></script>
 </head>
@@ -17,10 +17,10 @@
   <header class="site-header">
     <div class="container nav-bar">
       <a href="index.html" class="logo"><span></span>AREDO</a>
-      <nav>
+      <nav aria-label="Primary">
         <ul>
-          <li>
-            <button>Individuals & Families</button>
+          <li class="has-mega">
+            <button type="button" aria-expanded="false">Individuals & Families</button>
             <div class="mega-menu">
               <div class="mega-card">
                 <h4>Motor Insurance</h4>
@@ -40,8 +40,8 @@
               </div>
             </div>
           </li>
-          <li>
-            <button>Businesses</button>
+          <li class="has-mega">
+            <button type="button" aria-expanded="false">Businesses</button>
             <div class="mega-menu">
               <div class="mega-card">
                 <h4>SME Packages</h4>
@@ -61,8 +61,8 @@
               </div>
             </div>
           </li>
-          <li>
-            <button>Agents & Partners</button>
+          <li class="has-mega">
+            <button type="button" aria-expanded="false">Agents & Partners</button>
             <div class="mega-menu">
               <div class="mega-card">
                 <h4>Partner Programs</h4>
@@ -85,13 +85,14 @@
         </ul>
       </nav>
       <div class="nav-actions">
+        <a href="index-ar.html" class="lang-toggle" lang="ar" hreflang="ar">عربي</a>
         <a href="contact.html" class="btn btn-primary">Get a Quote</a>
-        <button class="menu-toggle" id="menuToggle"><span></span></button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation"><span></span></button>
       </div>
     </div>
   </header>
 
-  <div class="mobile-nav" id="mobileNav">
+  <div class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
     <button class="has-sub">Individuals & Families</button>
     <div class="listing-card">
       <a href="individuals.html">Personal solutions overview</a>
@@ -108,6 +109,7 @@
     <a href="insights.html">Insights</a>
     <a href="about.html">About</a>
     <a href="contact.html">Contact</a>
+    <a href="index-ar.html" class="lang-toggle" lang="ar" hreflang="ar">عربي</a>
     <a href="contact.html" class="btn btn-primary">Get a Quote</a>
   </div>
 
