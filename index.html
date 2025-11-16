@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bakeet — Happiness Delivered</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cairo:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="page-gradient"></div>
+  <header class="site-header">
+    <div class="logo-wrapper">
+      <img src="assets/logo.svg" alt="Bakeet logo" class="logo" />
+      <span class="brand-name">Bakeet</span>
+    </div>
+    <nav class="main-nav">
+      <a href="#hero" data-i18n="nav.home">Home</a>
+      <a href="#boxes" data-i18n="nav.boxes">Boxes</a>
+      <a href="#how" data-i18n="nav.how">How It Works</a>
+      <a href="#app" data-i18n="nav.app">App</a>
+      <a href="#about" data-i18n="nav.about">About</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
+    </nav>
+    <div class="language-switch" aria-label="Language switch">
+      <button data-lang="en" class="active">EN</button>
+      <button data-lang="ar">AR</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="hero-content">
+        <p class="hero-eyebrow" data-i18n="hero.eyebrow">Global lunch box experience</p>
+        <h1 data-i18n="hero.title">Bakeet — Happiness Delivered</h1>
+        <p class="hero-subtitle" data-i18n="hero.subtitle">Premium lunch boxes from around the world.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn primary" data-i18n="hero.order">Order Now</a>
+          <a href="#boxes" class="btn ghost" data-i18n="hero.explore">Explore boxes</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="floating-circle"></div>
+        <img src="assets/logo.svg" alt="Bakeet smile" class="hero-logo" />
+        <div class="hero-glass" data-i18n="hero.badge">Happiness delivered daily</div>
+      </div>
+    </section>
+
+    <section id="boxes" class="our-boxes">
+      <div class="section-header">
+        <p class="eyebrow" data-i18n="boxes.eyebrow">Taste the world</p>
+        <h2 data-i18n="boxes.title">Our signature boxes</h2>
+      </div>
+      <div class="slider-controls">
+        <button class="slider-btn" data-direction="prev" aria-label="Previous boxes">&#8592;</button>
+        <button class="slider-btn" data-direction="next" aria-label="Next boxes">&#8594;</button>
+      </div>
+      <div class="boxes-slider" id="boxesSlider"></div>
+    </section>
+
+    <section class="how-it-works" id="how">
+      <div class="section-header">
+        <p class="eyebrow" data-i18n="how.eyebrow">Seamless experience</p>
+        <h2 data-i18n="how.title">How it works</h2>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step-icon">1</div>
+          <h3 data-i18n="how.step1.title">Pick your lunch box</h3>
+          <p data-i18n="how.step1.copy">Browse curated menus crafted with Bakeet Red energy.</p>
+        </div>
+        <div class="step">
+          <div class="step-icon">2</div>
+          <h3 data-i18n="how.step2.title">Set your location</h3>
+          <p data-i18n="how.step2.copy">Choose delivery time and drop a pin. We handle the rest.</p>
+        </div>
+        <div class="step">
+          <div class="step-icon">3</div>
+          <h3 data-i18n="how.step3.title">Delivered to your door</h3>
+          <p data-i18n="how.step3.copy">Track the smile as it travels across your city.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="app-section" id="app">
+      <div class="section-header">
+        <p class="eyebrow" data-i18n="app.eyebrow">Bakeet app</p>
+        <h2 data-i18n="app.title">Control every bite from your phone</h2>
+      </div>
+      <div class="app-grid">
+        <div class="phone-mockup left">
+          <div class="phone-screen">
+            <h4 data-i18n="app.screen1.title">Menu</h4>
+            <p data-i18n="app.screen1.copy">Swap cuisines, add snacks, send love notes.</p>
+          </div>
+        </div>
+        <div class="app-cta glass-card">
+          <h3 data-i18n="app.cta.title">Download the Bakeet app</h3>
+          <p data-i18n="app.cta.copy">Realtime box tracking, chef stories, personalized nutrition insights.</p>
+          <div class="download-buttons">
+            <button class="btn primary" data-i18n="app.cta.ios">Download iOS</button>
+            <button class="btn ghost" data-i18n="app.cta.android">Download Android</button>
+          </div>
+        </div>
+        <div class="phone-mockup right">
+          <div class="phone-screen">
+            <h4 data-i18n="app.screen2.title">Delivery</h4>
+            <p data-i18n="app.screen2.copy">Live map, ETA, driver chat, joyful anticipation.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="section-header">
+        <p class="eyebrow" data-i18n="about.eyebrow">Who we are</p>
+        <h2 data-i18n="about.title">About Bakeet</h2>
+      </div>
+      <div class="about-grid">
+        <article class="glass-card" data-i18n="about.story">Bakeet is the lunch-box brand born from a collective of chefs who wanted to ship joy, not just calories. Every smile logo is hand sketched from the Arabic letter "ب" (Baa), a nod to our roots and our promise.</article>
+        <article class="glass-card" data-i18n="about.mission">Mission: deliver curated global lunch boxes with warmth, precision, and sustainability. We source locally, tell stories digitally, and celebrate cultural mashups.</article>
+        <article class="glass-card" data-i18n="about.unique">Why we are unique: liquid-glass packaging, chef-paired playlists, adaptive nutrition data, and a signature Bakeet Red ribbon that wraps every box.</article>
+        <article class="glass-card" data-i18n="about.logo">The smile logo represents the exact curve we want to see on your face right after the first bite. Keep it on your desk, it glows softly in the dark.</article>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="section-header">
+        <p class="eyebrow" data-i18n="contact.eyebrow">Stay in touch</p>
+        <h2 data-i18n="contact.title">Contact Bakeet</h2>
+      </div>
+      <div class="contact-grid">
+        <form class="glass-card contact-form">
+          <label for="name" data-i18n="contact.form.nameLabel">Name</label>
+          <input type="text" id="name" name="name" placeholder="Laila" />
+
+          <label for="email" data-i18n="contact.form.emailLabel">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@bakeet.com" />
+
+          <label for="message" data-i18n="contact.form.messageLabel">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Tell us your craving"></textarea>
+
+          <button type="submit" class="btn primary" data-i18n="contact.form.send">Send message</button>
+        </form>
+        <div class="contact-info glass-card">
+          <p><strong data-i18n="contact.info.whatsappLabel">WhatsApp:</strong> <a href="https://wa.me/966555555555">+966 55 555 5555</a></p>
+          <p><strong data-i18n="contact.info.phoneLabel">Phone:</strong> +971 4 123 4567</p>
+          <p><strong data-i18n="contact.info.emailLabel">Email:</strong> hello@bakeet.com</p>
+          <p><strong data-i18n="contact.info.addressLabel">Address:</strong> Bakeet HQ, Dubai Design District</p>
+          <a class="btn ghost" href="https://wa.me/966555555555" target="_blank" rel="noreferrer" data-i18n="contact.info.whatsappButton">Chat on WhatsApp</a>
+        </div>
+        <div class="map-wrapper glass-card">
+          <iframe title="Bakeet map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3609.3209366757684!2d55.27437707540841!3d25.22749067765584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f4289d1db5177%3A0x5f7ab0e5b708bdb0!2sDubai%20Design%20District!5e0!3m2!1sen!2sae!4v1700000000000!5m2!1sen!2sae" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand">
+      <img src="assets/logo.svg" alt="Bakeet" />
+      <p data-i18n="footer.tagline">Bakeet — happiness delivered, every lunch break.</p>
+    </div>
+    <div class="footer-links">
+      <a href="#hero" data-i18n="footer.links.hero">Hero</a>
+      <a href="#boxes" data-i18n="footer.links.boxes">Boxes</a>
+      <a href="#about" data-i18n="footer.links.about">About</a>
+    </div>
+    <div class="footer-social">
+      <a href="https://instagram.com" aria-label="Instagram">
+        <span>IG</span>
+      </a>
+      <a href="https://twitter.com" aria-label="Twitter">
+        <span>TW</span>
+      </a>
+      <a href="https://tiktok.com" aria-label="TikTok">
+        <span>TT</span>
+      </a>
+    </div>
+    <p class="copyright">© <span id="year"></span> Bakeet</p>
+  </footer>
+
+  <div class="modal" id="boxModal" aria-hidden="true">
+    <div class="modal-content glass-card">
+      <button class="modal-close" aria-label="Close">&times;</button>
+      <div class="modal-body">
+        <img src="" alt="Box preview" class="modal-image" />
+        <div class="modal-info">
+          <h3 class="modal-title"></h3>
+          <p class="modal-description"></p>
+          <ul class="modal-items"></ul>
+          <p class="modal-price"></p>
+          <p class="modal-delivery"></p>
+          <button class="btn primary" data-i18n="modal.order">Order This Box</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/app.js" defer></script>
+</body>
+</html>
