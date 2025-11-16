@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Insights & Resources | Aredo Insurance</title>
+  <meta name="description" content="Read the latest insights on risk, insurance and resilience in Iraq." />
+  <meta property="og:title" content="Aredo Insights" />
+  <meta property="og:description" content="Guides for individuals, businesses and partners." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-bar">
+      <a href="index.html" class="logo"><span></span>AREDO</a>
+      <nav>
+        <ul>
+          <li>
+            <button>Individuals & Families</button>
+            <div class="mega-menu">
+              <div class="mega-card"><h4>Motor Insurance</h4><p>Comprehensive protection for vehicles, roadside and cross-border cover.</p></div>
+              <div class="mega-card"><h4>Health & Medical</h4><p>Private medical access with regional provider networks.</p></div>
+              <div class="mega-card"><h4>Home & Property</h4><p>Building, contents and valuables cover built for Iraq homes.</p></div>
+              <div class="mega-card"><h4>Life & Savings</h4><p>Secure futures with education and savings plans.</p></div>
+            </div>
+          </li>
+          <li>
+            <button>Businesses</button>
+            <div class="mega-menu">
+              <div class="mega-card"><h4>SME Packages</h4><p>Bundle of property, liability and employee cover.</p></div>
+              <div class="mega-card"><h4>Corporate Risk</h4><p>Structured programs for oil, gas, construction and logistics.</p></div>
+              <div class="mega-card"><h4>Employee Benefits</h4><p>Group health, life, accident and travel for your teams.</p></div>
+              <div class="mega-card"><h4>Cyber & Liability</h4><p>Protect your data, directors and brand reputation.</p></div>
+            </div>
+          </li>
+          <li>
+            <button>Agents & Partners</button>
+            <div class="mega-menu">
+              <div class="mega-card"><h4>Partner Programs</h4><p>Tiered commissions, digital tools and marketing support.</p></div>
+              <div class="mega-card"><h4>Training Academy</h4><p>Certification pathways for new and experienced agents.</p></div>
+              <div class="mega-card"><h4>Portal Access</h4><p>Quote, bind and service clients in one secure platform.</p></div>
+            </div>
+          </li>
+          <li><a href="claims.html">Claims</a></li>
+          <li><a href="insights.html">Insights</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <a href="contact.html" class="btn btn-primary">Get a Quote</a>
+        <button class="menu-toggle" id="menuToggle"><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-nav" id="mobileNav">
+    <button class="has-sub">Individuals & Families</button>
+    <div class="listing-card"><a href="individuals.html">Personal solutions overview</a></div>
+    <button class="has-sub">Businesses</button>
+    <div class="listing-card"><a href="businesses.html">Corporate coverage</a></div>
+    <button class="has-sub">Agents & Partners</button>
+    <div class="listing-card"><a href="agents.html">Partner with us</a></div>
+    <a href="claims.html">Claims</a>
+    <a href="insights.html">Insights</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="btn btn-primary">Get a Quote</a>
+  </div>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-content">
+        <div class="glass-card">
+          <p>Insights & Resources</p>
+          <h1>Intelligence for a resilient Iraq</h1>
+          <p>Thought leadership, explainers and local research to guide your insurance decisions.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-heading">
+          <h2>Browse by topic</h2>
+          <p>Filter articles to find the most relevant guides.</p>
+        </div>
+        <div class="filters">
+          <button class="active" data-filter="all">All</button>
+          <button data-filter="motor">Motor</button>
+          <button data-filter="health">Health</button>
+          <button data-filter="business">Business Risk</button>
+          <button data-filter="agents">Agents</button>
+        </div>
+        <div class="insights-grid">
+          <article class="glass-card insight-card" data-category="motor">
+            <h4>Baghdad congestion and telematics-based premiums</h4>
+            <p class="meta">Motor · June 2024</p>
+            <p>How connected devices reduce accidents and keep premiums affordable.</p>
+            <a href="#">Read more</a>
+          </article>
+          <article class="glass-card insight-card" data-category="business">
+            <h4>Risk checklist for industrial parks</h4>
+            <p class="meta">Business · June 2024</p>
+            <p>Fire, flood and supply chain considerations for park operators.</p>
+            <a href="#">Read more</a>
+          </article>
+          <article class="glass-card insight-card" data-category="health">
+            <h4>Designing inclusive health plans</h4>
+            <p class="meta">Health · May 2024</p>
+            <p>Leverage public-private partnerships for broader coverage.</p>
+            <a href="#">Read more</a>
+          </article>
+          <article class="glass-card insight-card" data-category="agents">
+            <h4>Digital tools every Iraqi agent needs</h4>
+            <p class="meta">Agents · May 2024</p>
+            <p>Automate quoting, onboarding and compliance with Aredo portal.</p>
+            <a href="#">Read more</a>
+          </article>
+          <article class="glass-card insight-card" data-category="business">
+            <h4>Cyber readiness for logistics corridors</h4>
+            <p class="meta">Business · April 2024</p>
+            <p>Securing cross-border data flows and fleet telematics.</p>
+            <a href="#">Read more</a>
+          </article>
+          <article class="glass-card insight-card" data-category="motor">
+            <h4>Fleet electrification outlook</h4>
+            <p class="meta">Motor · March 2024</p>
+            <p>What EV adoption means for underwriting and claims.</p>
+            <a href="#">Read more</a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>Products</h4>
+          <ul>
+            <li><a href="individuals.html">Individuals & Families</a></li>
+            <li><a href="businesses.html">Businesses & Corporates</a></li>
+            <li><a href="agents.html">Agents & Partners</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Support</h4>
+          <ul>
+            <li><a href="claims.html">Claims Center</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="insights.html">Insights</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Cookies</a></li>
+          </ul>
+          <div class="socials" style="margin-top:16px;">
+            <a href="#">in</a>
+            <a href="#">fb</a>
+            <a href="#">ig</a>
+          </div>
+        </div>
+      </div>
+      <p>Aredo Insurance Company – Baghdad, Zaha Hadid Street, Iraq</p>
+      <p style="margin-top:8px;">© 2024 Aredo Insurance Company. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
